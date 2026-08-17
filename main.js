@@ -1,6 +1,13 @@
-let read = require('readline-sync') //  
+//let read = require('readline-sync') //  
 
-const name = read.question('Qual o seu nome? ')
+//const name = read.question('Qual o seu nome? ')
 
-console.log(name)
-console.log(`Olá, ${name}`) //interpolação text + var..
+//console.log(name)
+//console.log(`Olá, ${name}`) //interpolação text + var..
+
+
+function Sum(num_one, num_two){
+    return num_one + num_two
+}
+
+console.log(Sum(2, 3));
