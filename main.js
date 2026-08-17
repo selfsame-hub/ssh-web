@@ -6,8 +6,8 @@
 //console.log(`Olá, ${name}`) //interpolação text + var..
 
 
-function Sum(num_one, num_two){
-    return num_one + num_two
+function Sub(num_one, num_two){
+    return num_one - num_two
 }
 
-console.log(Sum(2, 3));
+console.log(Sub(2, 3));
