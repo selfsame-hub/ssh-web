@@ -1,0 +1,33 @@
+@import url(./global.css);
+
+header{
+    display: flex;
+    gap: 140px;
+    padding: 22px 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: var(--font-body-lg-size);
+    color: var(--Marrom-escuro );
+}
+
+.header-right{
+    display: flex;
+    gap: 24px;
+}
+
+.btn-empresa{
+    text-decoration: none;
+    color: var(--color-on-surface);
+    
+}

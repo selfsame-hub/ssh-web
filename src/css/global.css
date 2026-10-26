@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+ 
+  --color-primary-container: #9C0404;       
+  --color-primary: #720001;                 
+  --color-on-primary-fixed: #410000;
+  --Marrom-escuro: #5B403C;        
+            
+
+
+  --color-surface: #FCF9F8;                 
+  --color-surface-container-lowest: #FFFFFF; 
+  --color-surface-container-high: #EBE7E7;   
+  --color-on-surface: #1C1B1B;              
+
+  
+  --color-tertiary-container: #005650;      
+  --color-tertiary-fixed: #8DF4E9;          
+  --color-secondary: #735C00;              
+  --color-secondary-container: #FFDA72;     
+
+  --font-family-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Display LG */
+  --font-display-lg-size: 44px;
+  --font-display-lg-lh: 52px;
+  --font-display-lg-weight: 800;
+  --font-display-lg-ls: -0.03em;
+
+  /* Headline LG / H1 */
+  --font-h1-size: 32px;
+  --font-h1-lh: 40px;
+  --font-h1-weight: 700;
+  --font-h1-ls: -0.02em;
+
+  /* Headline MD / H2 */
+  --font-h2-size: 24px;
+  --font-h2-lh: 32px;
+  --font-h2-weight: 700;
+  --font-h2-ls: -0.015em;
+
+  /* Headline SM / H3 */
+  --font-h3-size: 20px;
+  --font-h3-lh: 28px;
+  --font-h3-weight: 600;
+  --font-h3-ls: -0.01em;
+
+  /* Body LG */
+  --font-body-lg-size: 16px;
+  --font-body-lg-lh: 24px;
+  --font-body-lg-weight: 400;
+
+  /* Metric Display */
+  --font-metric-size: 28px;
+  --font-metric-lh: 34px;
+  --font-metric-weight: 800;
+  --font-metric-ls: -0.02em;
+
+  /* Microcopy / Labels */
+  --font-microcopy-size: 11px;
+  --font-microcopy-lh: 12px;
+  --font-microcopy-weight: 700;
+}
