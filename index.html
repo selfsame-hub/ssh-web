@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selfsame-hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="logo-ssh" href="./src/assets/image/logo-ssh.svg">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
@@ -17,26 +18,19 @@
 
         <nav class="nav-links">
             <ul>
-                <li><a href="./src/pages/sobre.html">Sobre</a></li>
-                <li><a href="./index.html">Produtos</a></li>
-                <li><a href="./src/pages/calculadora.html">Calculadora de Churrasco</a></li>
-                <li><a href="./src/pages/pedidos.html">Meus Pedidos</a></li>
-                <li><a href="./src/pages/carrinho.html" class="cart-link">Carrinho <span class="badge"></span></a></li>
+                <li><a href="./src/pages/sobre.html" class="active">Sobre</a></li>
+                <li><a href="./index.html" class="active">Produtos</a></li>
+                <li><a href="./src/pages/calculadora.html" class="active">Calculadora de Churrasco</a></li>
+                <li><a href="./src/pages/pedidos.html" class="active">Meus Pedidos</a></li>
+                <li><a href="./src/pages/carrinho.html"class="active">Carrinho</a></li>
             </ul>
         </nav>
 
         <div class="header-right">
-
-            <a href="" class="btn-empresa">Ir para Painel Empresa</a>
-            <div class="profile-container">
-                <div class="user-info">
-                    <span class="user-name">Carlos Silva</span>
-                    <span class="user-badge">Cliente Prime</span>
-                </div>
-                <div class="avatar-box">
-                    <span>👤</span>
-                </div>
-            </div>
+            <nav>
+                <a href="./src/pages/painel-empresa.html" class="btn-painel">Painel da Empresa</a>
+                <a href="./src/pages/login.html" class="btn-login"><i class="fa-regular fa-user"></i></a>
+            </nav>
         </div>
     </header>
 </body>
