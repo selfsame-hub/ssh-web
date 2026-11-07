@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
 
+*{
+    border: 0; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+
+}
+
+
 :root {
  
   --color-primary-container: #9C0404;       
@@ -29,7 +38,7 @@
   --font-display-lg-ls: -0.03em;
 
   /* Headline LG / H1 */
-  --font-h1-size: 32px;
+  --font-h1-size: 44px;
   --font-h1-lh: 40px;
   --font-h1-weight: 700;
   --font-h1-ls: -0.02em;

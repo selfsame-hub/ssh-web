@@ -3,7 +3,7 @@
 header{
     display: flex;
     gap: 140px;
-    padding: 22px 0px;
+    padding: 22px 24px;
     align-items: center;
     justify-content: center;
 
@@ -56,4 +56,59 @@ header{
     font-size: var(--font-microcopy-size);
     text-emphasis: none;
     align-items: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-surface-container-high);
+    padding: 40px 24px;
+    gap: 40px;
+}
+
+.main-artesanal{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-artesanal h1{
+    font-size: var(--font-h1-size);
+    font-weight: var(--font-display-lg-weight);
+    font-family: var(--font-family-main);
+    width: 695px;
+    line-height: 1.1;
+}
+
+.main-artesanal span{
+    color: var(--color-primary-container);
+}
+
+.main-artesanal p{
+    font-size: var(--font-body-lg-size);
+    font-family: var(--font-family-main);
+    width: 672px;
+    color: var(--Marrom-escuro);
+}
+
+.btn-main{
+    background-color: var(--color-primary);
+    padding: 16px 24px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.btn-main a{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-body-lg-size);
+    font-weight: var(--font-body-lg-weight);
+    font-family: var(--font-family-main);
+    color: var(--color-surface);
+}
+
+.image-main{
+    border-radius: 10px;
 }
