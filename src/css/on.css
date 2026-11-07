@@ -1,0 +1,59 @@
+@import url(./global.css);
+
+header{
+    display: flex;
+    gap: 140px;
+    padding: 22px 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-family: var(--font-family-main);
+    font-size: var(--font-body-lg-size);
+    color: var(--Marrom-escuro );
+}
+
+.nav-links a:hover{
+    color: var(--color-primary-container);
+}
+
+.header-right{
+    display: flex;
+    gap: 24px;
+}
+
+.header-right nav{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-painel{
+    color: var(--color-on-surface);
+    font-family: var(--font-family-main);
+    font-size: var(--font-body-lg-size);
+    text-decoration: none;
+    border: 1px solid var(--color-on-surface);
+    background-color: var(--color-surface-container-high);
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.btn-login{      
+    color: var(--color-surface-container-high);
+    background-color: var(--color-primary-container);
+    padding: 12px;
+    border-radius: 12px;
+    font-size: var(--font-microcopy-size);
+    text-emphasis: none;
+    align-items: center;
+}
