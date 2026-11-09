@@ -1,0 +1,221 @@
+@import url(./global.css);
+
+header{
+    display: flex;
+    gap: 140px;
+    padding: 22px 24px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-family: var(--font-family-main);
+    font-size: var(--font-body-lg-size);
+    color: var(--Marrom-escuro );
+}
+
+.nav-links a:hover{
+    color: var(--color-primary-container);
+}
+
+.header-right{
+    display: flex;
+    gap: 24px;
+}
+
+.header-right nav{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-painel{
+    color: var(--color-on-surface);
+    font-family: var(--font-family-main);
+    font-size: var(--font-body-lg-size);
+    text-decoration: none;
+    border: 1px solid var(--color-on-surface);
+    background-color: var(--color-surface-container-high);
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.btn-login{      
+    color: var(--color-surface-container-high);
+    background-color: var(--color-primary-container);
+    padding: 12px;
+    border-radius: 12px;
+    font-size: var(--font-microcopy-size);
+    text-emphasis: none;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-surface-container-high);
+    padding: 40px 24px;
+    gap: 40px;
+}
+
+.main-artesanal{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-artesanal h1{
+    font-size: var(--font-h1-size);
+    font-weight: var(--font-display-lg-weight);
+    font-family: var(--font-family-main);
+    width: 695px;
+    line-height: 1.1;
+}
+
+.main-artesanal span{
+    color: var(--color-primary-container);
+}
+
+.main-artesanal p{
+    font-size: var(--font-body-lg-size);
+    font-family: var(--font-family-main);
+    width: 672px;
+    color: var(--Marrom-escuro);
+}
+
+.btn-main{
+    background-color: var(--color-primary);
+    padding: 16px 24px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.btn-main a{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-body-lg-size);
+    font-weight: var(--font-body-lg-weight);
+    font-family: var(--font-family-main);
+    color: var(--color-surface);
+}
+
+.image-main{
+    border-radius: 10px;
+}
+
+.precision-section {
+    padding: 40px 24px;
+    background-color: var(--color-surface);
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sub-container span {
+    color: var(--color-primary-container);
+    background-color: var(--color-surface-container-high);
+    font-size: var(--font-microcopy-lh);
+    font-weight: var(--font-microcopy-weight);
+    font-family: var(--font-family-main);
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.sub-container h2 {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-h2-weight);
+}
+
+.sub-container p {
+    text-align: center;
+    font-family: var(--font-family-main);
+    font-size: var(--font-body-lg-size);
+    color: var(--Marrom-escuro);
+    width: 740px;
+}
+
+.card-category {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px; 
+    gap: 24px;
+}
+
+.craftsmanship-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-surface-container-lowest);
+    padding: 40px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    gap: 10px;
+}
+
+.craftsmanship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px var(--color-primary);
+}
+
+.craftsmanship-card .description-container {
+    color: var(--color-primary-container);
+    background-color: var(--color-surface-container-high);
+    font-family: var(--font-family-main);
+    font-size: var(--font-microcopy-size);
+    font-weight: var(--font-microcopy-weight);
+    padding: 4px 8px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.craftsmanship-card h3 {
+    font-family: var(--font-family-main);
+    font-size: var(--font-h3-size);
+}
+
+.craftsmanship-card p {
+    font-family: var(--font-family-main);
+    font-size: var(--font-body-lg-size);
+    color: var(--Marrom-escuro);
+    width: 522px;
+}
+
+.competence-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.competence-items {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.competence-items img {
+    width: 14px;
+    height: 14px;
+}
+
+.competence-items span{
+    font-family: var(--font-family-main);
+    font-size: var(--font-microcopy-lh);
+    color: var(--color-on-surface);
+}
