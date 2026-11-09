@@ -219,3 +219,214 @@ main{
     font-size: var(--font-microcopy-lh);
     color: var(--color-on-surface);
 }
+
+.maestria-section {
+    background-color: var(--color-on-surface); 
+    font-family: var(--font-family-main);
+    padding: 64px 20px;
+    color: var(--color-surface);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-information {
+    margin-bottom: 40px;
+    max-width: 750px;
+}
+
+.header-left h2 {
+    font-size: var(--font-h2-size);
+    line-height: var(--font-h2-lh);
+    font-weight: var(--font-h2-weight);
+    letter-spacing: var(--font-h2-ls);
+    color: var(--color-surface-container-lowest);
+    margin-bottom: 12px;
+}
+
+.header-left p {
+    font-size: var(--font-body-lg-size);
+    line-height: var(--font-body-lg-lh);
+    font-weight: var(--font-body-lg-weight);
+    color: var(--color-surface-container-high);
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--color-on-surface);
+    border: 1px solid #332E2B;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.bg-red {
+    background-color: var(--color-primary-container);   
+}
+
+
+
+.bg-teal {
+    background-color: var(--color-primary-container);
+    
+}
+
+.bg-olive {
+    background-color: var(--color-primary-container);
+}
+
+.bg-brown {
+    background-color: var(--color-primary-container);
+}
+
+
+.card-body h3 {
+    font-size: var(--font-metric-size);
+    line-height: var(--font-metric-lh);
+    font-weight: var(--font-metric-weight);
+    letter-spacing: var(--font-metric-ls);
+    color: var(--color-surface-container-lowest);
+    margin-bottom: 4px;
+}
+
+.card-body h4 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: var(--color-surface);
+    margin-bottom: 12px;
+}
+
+.card-body p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-surface-container-high);
+}
+
+.oficio-mestre-section {
+    background-color: var(--color-surface-container-high);
+    font-family: var(--font-family-main);
+    padding: 64px 20px;
+    color: var(--color-surface);
+}
+
+.container-mestre {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.oficio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section-tag {
+    font-size: var(--font-microcopy-size);
+    line-height: var(--font-microcopy-lh);
+    font-weight: var(--font-microcopy-weight);
+    color: var(--color-primary-container);
+    letter-spacing: 1px;
+}
+
+.oficio-quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-on-surface);
+    font-style: italic;
+    border-left: 3px solid var(--color-primary-container);
+    padding-left: 16px;
+}
+
+.mestre-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mestre-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #332E2B;
+}
+
+.mestre-info h3 {
+    font-size: var(--font-h3-size);
+    line-height: var(--font-h3-lh);
+    font-weight: var(--font-h3-weight);
+    color: var(--color-on-surface);
+    margin-bottom: 2px;
+}
+
+.mestre-info p {
+    font-size: 13px;
+    color: var(--Marrom-escuro);
+}
+
+.mestre-rating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--Marrom-escuro);
+}
+
+.stars {
+    color: var(--color-secondary-container);
+    letter-spacing: 2px;
+}
+
+.stars span{
+    font-family: var(--font-family-main);
+    font-size: var(--font-microcopy-lh);
+    color: var(--Marrom-escuro);
+}
+
+.oficio-card-image img{
+    border-radius: 12px;
+    
+}
+
