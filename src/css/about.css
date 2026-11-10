@@ -430,14 +430,14 @@ main{
     
 }
 
-.cta-churrasco-section {
+.section-barbecue {
     padding: 40px 24px;
     background-color: var(--color-surface);
     display: flex;
     justify-content: center;
 }
 
-.cta-churrasco-container {
+.barbecue-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -626,5 +626,5 @@ main{
 
 .footer-legal-links a:hover {
     color: var(--color-primary-container);
-}
+}   
 
