@@ -97,6 +97,8 @@
         const passwordInput = document.querySelector('#password');
         const passwordToggle = document.querySelector('.password-toggle');
         const passwordIcon = passwordToggle.querySelector('img');
+        const loginForm = document.querySelector('.login-form');
+        const emailInput = document.querySelector('#email');
 
         passwordToggle.addEventListener('click', () => {
             const isPasswordVisible = passwordInput.type === 'text';
@@ -105,6 +107,15 @@
             passwordIcon.src = isPasswordVisible
                 ? '../assets/image/eye-visibility.svg'
                 : '../assets/image/eye-visibility-off.svg';
+        });
+
+        loginForm.addEventListener('submit', (event) => {
+            const username = emailInput.value.trim();
+
+            if (username.toLowerCase().endsWith('@corp')) {
+                event.preventDefault();
+                window.location.href = `./first-access-collaborator.html?user=${encodeURIComponent(username)}`;
+            }
         });
     </script>
 </body>

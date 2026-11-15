@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Configure seu primeiro acesso à Selfsame Hub">
+    <title>Primeiro acesso | Selfsame Hub</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/image/logo-ssh.svg">
+    <link rel="stylesheet" href="../css/first-access-collaborator.css">
+</head>
+
+<body>
+    <main class="login-page first-access-page">
+        <section class="login-panel first-access-panel" aria-labelledby="first-access-title">
+            <div class="login-card first-access-card">
+                <header class="login-header first-access-header">
+                    <h1 id="first-access-title">Olá, colaborador!</h1>
+                    <p>Seu usuário foi reconhecido. Complete seus dados para finalizar o primeiro acesso.</p>
+                </header>
+
+                <form class="login-form first-access-form" action="" method="post">
+                    <div class="field-group">
+                        <label for="collaborator-username">Usuário</label>
+                        <div class="input-wrapper">
+                            <input class="readonly-input" type="text" id="collaborator-username" name="username"
+                                autocomplete="username" readonly aria-describedby="username-help">
+                        </div>
+                        <small class="readonly-help" id="username-help">Esse usuário não pode ser alterado.</small>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="new-password">Nova senha</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="new-password" name="password"
+                                placeholder="Digite sua nova senha" autocomplete="new-password" minlength="8"
+                                aria-describedby="password-help" required>
+                            <button class="password-toggle" type="button" aria-label="Mostrar nova senha"
+                                data-password-target="new-password">
+                                <img src="../assets/image/eye-visibility.svg" alt="Mostrar senha">
+                            </button>
+                        </div>
+                        <small id="password-help">Use pelo menos 8 caracteres.</small>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="confirm-password">Confirmar nova senha</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="confirm-password" name="password_confirmation"
+                                placeholder="Repita sua nova senha" autocomplete="new-password" required>
+                            <button class="password-toggle" type="button" aria-label="Mostrar confirmação da senha"
+                                data-password-target="confirm-password">
+                                <img src="../assets/image/eye-visibility.svg" alt="Mostrar senha">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="personal-email">E-mail pessoal</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="personal-email" name="personal_email"
+                                placeholder="Ex.: joao.canastra@gmail.com" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="confirm-email">Confirmar e-mail</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="confirm-email" name="personal_email_confirmation"
+                                placeholder="Ex.: joao.canastra@gmail.com" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="recovery-phone">Telefone / Whatsapp</label>
+                        <div class="input-wrapper">
+                            <input type="tel" id="recovery-phone" name="recovery_phone"
+                                placeholder="(00) 00000-0000" autocomplete="tel" required>
+                        </div>
+                    </div>
+
+                    <button class="submit-button first-access-submit" type="submit">
+                        Salvar
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <aside class="brand-panel first-access-brand" aria-label="Sobre a Selfsame Hub">
+            <div class="brand-content">
+                <div class="brand-logo">
+                    <img src="../assets/image/logo-ssh.svg" alt="Logo Selfsame Hub">
+                </div>
+                <h2>selfsame<span>hub</span></h2>
+                <p class="brand-slogan">“Qualidade, tradição e cortes nobres.”</p>
+
+                <div class="brand-features">
+                    <div class="feature-card">
+                        <strong>SIF 100%</strong>
+                        <small>Rastreabilidade</small>
+                    </div>
+                    <div class="feature-card">
+                        <strong>Cadeia Fria</strong>
+                        <small>0°C a 2°C - Estática</small>
+                    </div>
+                    <div class="feature-card">
+                        <strong>Venda por Peso</strong>
+                        <small>Balança Aferida</small>
+                    </div>
+                </div>
+
+                <p class="brand-description">Plataforma integrada conectando clientes exigentes ao controle de
+                    desossa e estoque de alta precisão.</p>
+            </div>
+        </aside>
+    </main>
+
+    <script>
+        const passwordToggles = document.querySelectorAll('.password-toggle');
+
+        passwordToggles.forEach((passwordToggle) => {
+            const passwordInput = document.getElementById(passwordToggle.dataset.passwordTarget);
+            const passwordIcon = passwordToggle.querySelector('img');
+
+            passwordToggle.addEventListener('click', () => {
+                const isPasswordVisible = passwordInput.type === 'text';
+                passwordInput.type = isPasswordVisible ? 'password' : 'text';
+                passwordToggle.setAttribute('aria-label',
+                    isPasswordVisible ? 'Mostrar senha' : 'Ocultar senha');
+                passwordIcon.src = isPasswordVisible
+                    ? '../assets/image/eye-visibility.svg'
+                    : '../assets/image/eye-visibility-off.svg';
+            });
+        });
+
+        const firstAccessForm = document.querySelector('.first-access-form');
+        const newPassword = document.querySelector('#new-password');
+        const confirmPassword = document.querySelector('#confirm-password');
+        const personalEmail = document.querySelector('#personal-email');
+        const confirmEmail = document.querySelector('#confirm-email');
+        const collaboratorUsername = document.querySelector('#collaborator-username');
+        const usernameFromLogin = new URLSearchParams(window.location.search).get('user');
+
+        collaboratorUsername.value = usernameFromLogin || 'Usuário corporativo';
+
+        firstAccessForm.addEventListener('submit', (event) => {
+            const passwordsMatch = newPassword.value === confirmPassword.value;
+            const emailsMatch = personalEmail.value === confirmEmail.value;
+
+            confirmPassword.setCustomValidity(passwordsMatch ? '' : 'As senhas precisam ser iguais.');
+            confirmEmail.setCustomValidity(emailsMatch ? '' : 'Os e-mails precisam ser iguais.');
+
+            if (!passwordsMatch || !emailsMatch) {
+                event.preventDefault();
+            } else {
+                event.preventDefault();
+                window.location.href = './password-reset-success.html';
+            }
+        });
+
+        confirmPassword.addEventListener('input', () => {
+            confirmPassword.setCustomValidity(
+                newPassword.value === confirmPassword.value ? '' : 'As senhas precisam ser iguais.'
+            );
+        });
+
+        confirmEmail.addEventListener('input', () => {
+            confirmEmail.setCustomValidity(
+                personalEmail.value === confirmEmail.value ? '' : 'Os e-mails precisam ser iguais.'
+            );
+        });
+    </script>
+</body>
+
+</html>
