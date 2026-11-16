@@ -1,51 +1,454 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hub Carnes Nobres</title>
-  <link rel="stylesheet" href="../css/company-panel.css">
-  <script src="../js/company-dashboard.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Carnes Nobres</title>
+    <link rel="stylesheet" href="../css/company-panel.css">
+    <script src="../js/company-dashboard.js" defer></script>
 </head>
+
 <body>
 
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <button class="menu-toggle" id="menuToggle" title="Expandir/Recolher menu" aria-label="Expandir ou recolher menu lateral">
-        <img src="../assets/image/icon-kabad.svg" alt="Menu" class="icon-menu" aria-describedby="Menu para expandir ou recolher menu lateral" aria-label="Menu para expandir ou recolher menu lateral">
-      </button>
-      
-      <div class="brand">
-        <img src="../assets/image/logo-ssh.svg" alt="Logo Self Same" class="brand-logo" aria-label="Logo da empresa" aria-describedby="Logo da empresa">
-        <div class="brand-text">
-          <span class="brand-title">Self Same</span>
-          <span class="brand-subtitle">HUB CARNES NOBRES</span>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="menu-toggle" id="menuToggle" title="Expandir/Recolher menu"
+                aria-label="Expandir ou recolher menu lateral">
+                <img src="../assets/image/icon-kabad.svg" alt="Menu" class="icon-menu"
+                    aria-describedby="Menu para expandir ou recolher menu lateral"
+                    aria-label="Menu para expandir ou recolher menu lateral">
+            </button>
+
+            <div class="brand">
+                <img src="../assets/image/logo-ssh.svg" alt="Logo Self Same" class="brand-logo"
+                    aria-label="Logo da empresa" aria-describedby="Logo da empresa">
+                <div class="brand-text">
+                    <span class="brand-title">Self Same</span>
+                    <span class="brand-subtitle">HUB CARNES NOBRES</span>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="./company-panel.html" class="nav-item active" data-target="dashboard" title="Dashboard">
+                        <img src="../assets/image/icon-dashboard.svg" alt="Dashboard" class="nav-icon"
+                            aria-label="Icone de menu" aria-describedby="Icone de menu">
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./company-panel-product.html" class="nav-item" data-target="produtos" title="Produtos">
+                        <img src="../assets/image/Icon-product.svg" alt="Produtos" class="nav-icon"
+                            aria-label="Icone de menu" aria-describedby="Icone de menu">
+                        <span class="nav-text">Produtos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./company-panel-orders.html" class="nav-item" data-target="pedidos" title="Pedidos">
+                        <img src="../assets/image/Icon-orders.svg" alt="Pedidos" class="nav-icon"
+                            aria-label="Icone de menu" aria-describedby="Icone de memu">
+                        <span class="nav-text">Pedidos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="topbar-left">
+                <img src="../assets/image/logo-ssh.svg" alt="Logótipo Self Same" class="topbar-mini-logo">
+
+                <div class="search-box">
+                    <img src="../assets/image/icon-magnifying glass.svg" alt="Pesquisar" class="icon-search">
+                    <input type="text" placeholder="Buscar corte, lote, pedido ou cliente...">
+                </div>
+            </div>
+
+            <div class="topbar-right">
+                <button class="notification-btn" title="Notificações" aria-label="Notificações">
+                    <img src="../assets/image/icon-bell.svg" alt="Notificações" class="icon-bell">
+                    <span class="badge-dot"></span>
+                </button>
+
+                <button class="profile-btn" title="Perfil" aria-label="Perfil do utilizador">
+                    <img src="../assets/image/icon-user.svg" alt="Perfil" class="icon-user">
+                </button>
+            </div>
+        </header>
+
+        <section id="dashboard" class="screen active">
+
+            <div class="dashboard-header">
+                <div>
+                    <h1 class="page-title">Painel Operacional & Vendas</h1>
+                    <p class="page-subtitle">Monitoramento de pesagens de precisão, estoque em câmara fria e fluxo
+                        de pedidos.</p>
+                </div>
+
+                <div class="dashboard-actions">
+                    <div class="filter-group">
+                        <button class="filter-btn">Hoje</button>
+                        <button class="filter-btn active">Últimos 7 dias</button>
+                        <button class="filter-btn">Este Mês</button>
+                        <button class="filter-btn">Ano</button>
+                    </div>
+
+                    <button class="btn-primary">
+                        <img src="../assets/image/icon-plus.svg" alt="Nova pesagem" class="icon-sm">
+                        <span>Nova Pesagem</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="kpi-grid">
+                <article class="kpi-card border-primary">
+                    <span class="kpi-label">FATURAMENTO TOTAL</span>
+                    <div class="kpi-value">R$ 148.920<small>,00</small></div>
+                    <div class="kpi-footer text-teal">
+                        <span>↗ +14.2%</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card border-neutral">
+                    <span class="kpi-label">VENDAS DO DIA</span>
+                    <div class="kpi-value">R$ 12.450<small>,80</small></div>
+                    <div class="kpi-footer text-teal">
+                        <img src="../assets/image/icon-check-circle.svg" alt="Confirmado" class="icon-xs">
+                        <span>38 pedidos</span> <small class="text-muted">faturados hoje</small>
+                    </div>
+                </article>
+
+                <article class="kpi-card border-neutral">
+                    <span class="kpi-label">PEDIDOS TOTAIS</span>
+                    <div class="kpi-value">42</div>
+                    <div class="kpi-footer text-primary">
+                        <span>3 novos</span> <small class="text-muted">nos últimos 15 min</small>
+                    </div>
+                </article>
+            </div>
+
+            <div class="charts-grid">
+                <article class="panel-card">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">Fluxo de Faturamento & Tendência de Cortes</h2>
+                            <p class="panel-subtitle">Comparativo entre ciclo atual vs. ciclo anterior com projeção
+                                de demanda frigorífica.</p>
+                        </div>
+                        <div class="chart-legend">
+                            <span class="badge-live">LIVE SIF DATA</span>
+                            <span class="legend-item"><i class="dot bg-primary"></i> Ciclo Vigente</span>
+                            <span class="legend-item"><i class="dot bg-gray"></i> Ciclo Anterior</span>
+                        </div>
+                    </div>
+
+                    <div class="line-chart-container">
+                        <svg viewBox="0 0 600 180" class="svg-chart">
+                            <defs>
+                                <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" class="grad-start" />
+                                    <stop offset="100%" class="grad-end" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 10 150 Q 150 110, 300 130 T 590 95" class="chart-line-prev" />
+                            <path d="M 10 135 Q 110 85, 210 105 T 410 55 T 590 25 L 590 175 L 10 175 Z"
+                                class="chart-area-curr" />
+                            <path d="M 10 135 Q 110 85, 210 105 T 410 55 T 590 25" class="chart-line-curr" />
+                            <circle cx="210" cy="105" r="4" class="chart-point" />
+                            <circle cx="410" cy="55" r="4" class="chart-point" />
+                            <circle cx="590" cy="25" r="4" class="chart-point" />
+                        </svg>
+                        <div class="chart-x-axis">
+                            <span>Segunda</span>
+                            <span>Terça</span>
+                            <span>Quarta</span>
+                            <span>Quinta</span>
+                            <span>Sexta</span>
+                            <span>Sábado</span>
+                            <span class="text-primary font-bold">Domingo (Pico)</span>
+                        </div>
+                    </div>
+
+                    <div class="chart-bottom-bar">
+                        <img src="../assets/image/icon-trend.svg" alt="Tendência" class="icon-sm">
+                        <span>Média de faturamento diário: <strong>R$ 21.274,28</strong> (+18.4% no fim de
+                            semana)</span>
+                    </div>
+                </article>
+
+                <article class="panel-card">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">Mix por Categoria</h2>
+                            <p class="panel-subtitle">Volume de vendas por linhagem</p>
+                        </div>
+                    </div>
+
+                    <div class="donut-wrapper">
+                        <div class="donut-chart">
+                            <div class="donut-center">
+                                <small>CORTE LÍDER</small>
+                                <strong>EM ALTA</strong>
+                                <span>32% fat.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="category-list">
+                        <li><span><i class="dot dot-wagyu"></i> Wagyu A5 Kuroge</span> <strong>32%</strong></li>
+                        <li><span><i class="dot dot-angus"></i> Angus Prime BMS 6+</span> <strong>28%</strong></li>
+                        <li><span><i class="dot dot-dryaged"></i> Dry Aged Especial (30 a 60d)</span>
+                            <strong>20%</strong>
+                        </li>
+                        <li><span><i class="dot dot-cordeiro"></i> Cordeiro Patagônico</span> <strong>10%</strong>
+                        </li>
+                        <li><span><i class="dot dot-suino"></i> Suíno Puro Duroc & Cutelaria</span>
+                            <strong>10%</strong>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="bottom-grid">
+                <article class="panel-card">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">Fila de Operação Frigorífica</h2>
+                            <p class="panel-subtitle">Controle em tempo real de pesagem, porcionamento e cadeia de
+                                frio.</p>
+                        </div>
+                        <a href="./company-panel-product.html" class="link-primary">Ver todos os pedidos →</a>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="ops-table">
+                            <thead>
+                                <tr>
+                                    <th>ID / CLIENTE</th>
+                                    <th>CORTES & ESPECIFICAÇÃO</th>
+                                    <th>PESO ALVO / REAL</th>
+                                    <th>VALOR</th>
+                                    <th>STATUS EM TEMPO REAL</th>
+                                    <th>AÇÃO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>#ORD-9841</strong>
+                                        <span class="sub-text">Restaurante Fogo & Brasa</span>
+                                    </td>
+                                    <td><strong>Picanha Wagyu A5</strong></td>
+                                    <td><strong>3,200 kg</strong></td>
+                                    <td><strong>R$ 1.888,00</strong></td>
+                                    <td><span class="status-pill pill-warning">Pendente de Pesagem</span></td>
+                                    <td><button class="btn-table-primary">Pesar</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>#ORD-9839</strong>
+                                        <span class="sub-text">Dr. Roberto Miranda</span>
+                                    </td>
+                                    <td><strong>Prime Rib Dry Aged 45d</strong></td>
+                                    <td><strong>2,450 kg</strong></td>
+                                    <td><strong>R$ 541,64</strong></td>
+                                    <td><span class="status-pill pill-neutral">Em Corte / Toalete</span></td>
+                                    <td><button class="btn-dots">⋮</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>#ORD-9836</strong>
+                                        <span class="sub-text">Empório Gourmet Jardins</span>
+                                    </td>
+                                    <td><strong>Costela Janela Prime Angus</strong></td>
+                                    <td><strong>12,100 kg</strong></td>
+                                    <td><strong>R$ 1.573,00</strong></td>
+                                    <td><span class="status-pill pill-cyan">Câmara Fria (0.8°C)</span></td>
+                                    <td><button class="btn-dots">⋮</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>#ORD-9830</strong>
+                                        <span class="sub-text">Chef Henrique S.</span>
+                                    </td>
+                                    <td><strong>Bife de Chorizo Wagyu A5</strong></td>
+                                    <td><strong>1,020 kg</strong></td>
+                                    <td><strong>R$ 795,60</strong></td>
+                                    <td><span class="status-pill pill-warning">Saiu p/ Entrega</span></td>
+                                    <td><button class="btn-dots">⋮</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>#ORD-9824</strong>
+                                        <span class="sub-text">Camila Vianne</span>
+                                    </td>
+                                    <td><strong>Linguiça Artesanal de Ervas</strong></td>
+                                    <td><strong>1,500 kg</strong></td>
+                                    <td><strong>R$ 133,50</strong></td>
+                                    <td><span class="status-pill pill-teal">✓ Concluído</span></td>
+                                    <td><img src="../assets/image/icon-receipt.svg" alt="Comprovante" class="icon-sm">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-footer">
+                        <span>Exibindo 5 de 42 pedidos ativos em sistema</span>
+                        <div class="pagination">
+                            <button>&lt;</button>
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>&gt;</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel-card">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">Cortes Mais Vendidos</h2>
+                            <p class="panel-subtitle">Ranking por quilo e volume financeiro</p>
+                        </div>
+                    </div>
+
+                    <div class="ranking-list">
+                        <div class="ranking-item">
+                            <span class="rank-num text-primary">1</span>
+                            <img src="../assets/image/corte-picanha.jpg" alt="Picanha" class="rank-img">
+                            <div class="rank-info">
+                                <div class="rank-top">
+                                    <strong>Picanha</strong>
+                                    <strong>R$ 52.480</strong>
+                                </div>
+                                <div class="rank-sub">
+                                    <span class="text-primary">284 kg faturados</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill fill-rank-1"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <span class="rank-num">2</span>
+                            <img src="../assets/image/corte-primerib.jpg" alt="Prime Rib" class="rank-img">
+                            <div class="rank-info">
+                                <div class="rank-top">
+                                    <strong>Prime Rib</strong>
+                                    <strong>R$ 38.120</strong>
+                                </div>
+                                <div class="rank-sub">
+                                    <span class="text-primary">172 kg faturados</span>
+                                    <span>R$ 221,60/kg méd.</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill fill-rank-2"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <span class="rank-num">3</span>
+                            <img src="../assets/image/corte-chorizo.jpg" alt="Bife Chorizo" class="rank-img">
+                            <div class="rank-info">
+                                <div class="rank-top">
+                                    <strong>Bife Chorizo</strong>
+                                    <strong>R$ 29.800</strong>
+                                </div>
+                                <div class="rank-sub">
+                                    <span class="text-primary">38 kg faturados</span>
+                                    <span>R$ 784,20/kg méd.</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill fill-rank-3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <span class="rank-num">4</span>
+                            <img src="../assets/image/corte-costela.jpg" alt="Costela Janela" class="rank-img">
+                            <div class="rank-info">
+                                <div class="rank-top">
+                                    <strong>Costela Janela</strong>
+                                    <strong>R$ 18.240</strong>
+                                </div>
+                                <div class="rank-sub">
+                                    <span class="text-primary">140 kg faturados</span>
+                                    <span>R$ 130,00/kg méd.</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill fill-rank-4"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <span class="rank-num">5</span>
+                            <img src="../assets/image/corte-linguica.jpg" alt="Linguiça Artesanal" class="rank-img">
+                            <div class="rank-info">
+                                <div class="rank-top">
+                                    <strong>Linguiça Artesanal</strong>
+                                    <strong>R$ 10.280</strong>
+                                </div>
+                                <div class="rank-sub">
+                                    <span class="text-primary">115 kg faturados</span>
+                                    <span>R$ 89,00/kg méd.</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill fill-rank-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-footer">
+                        <span>Rendimento total <strong>649 kg</strong></span>
+                        <a href="#produtos" class="link-primary">Ver matriz de cortes &gt;</a>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="produtos" class="screen">
+            <div class="dashboard-header">
+                <div>
+                    <h1 class="page-title">Catálogo & Matriz de Cortes</h1>
+                    <p class="page-subtitle">Gestão de produtos nobres, maturação Dry Aged e tabelas de preço por
+                        quilo.</p>
+                </div>
+                <button class="btn-primary">
+                    <img src="../assets/image/icon-plus.svg" alt="Novo corte" class="icon-sm">
+                    <span>Novo Corte</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="pedidos" class="screen">
+            <div class="dashboard-header">
+                <div>
+                    <h1 class="page-title">Gestão de Pedidos & Expedição</h1>
+                    <p class="page-subtitle">Acompanhamento completo de pesagem, lacres SIF e entregas frigoríficas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     </div>
 
-    <nav class="sidebar-nav">
-      <ul>
-        <li>
-          <a href="./company-panel.html" class="nav-item active" data-target="dashboard" title="Dashboard">
-            <img src="../assets/image/icon-dashboard.svg" alt="Dashboard" class="nav-icon"aria-label="Icone de menu" aria-describedby="Icone de menu">
-            <span class="nav-text">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="./company-panel-product.html" class="nav-item" data-target="produtos" title="Produtos">
-            <img src="../assets/image/Icon-product.svg" alt="Produtos" class="nav-icon" aria-label="Icone de menu" aria-describedby="Icone de menu">
-            <span class="nav-text">Produtos</span>
-          </a>
-        </li>
-        <li>
-          <a href="./company-panel-orders.html" class="nav-item" data-target="pedidos" title="Pedidos">
-            <img src="../assets/image/Icon-orders.svg" alt="Pedidos" class="nav-icon" aria-label="Icone de menu" aria-describedby="Icone de memu">
-            <span class="nav-text">Pedidos</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </aside>
 </body>
+
 </html>
