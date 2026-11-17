@@ -8,6 +8,7 @@
     <title>Login | Selfsame Hub</title>
     <link rel="icon" type="image/svg+xml" href="../assets/image/logo-ssh.svg" alt="Logo da empresa Selfsamehub">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
 </head>
 
 <body>
@@ -93,20 +94,6 @@
         </aside>
     </main>
 
-    <script>
-        const passwordInput = document.querySelector('#password');
-        const passwordToggle = document.querySelector('.password-toggle');
-        const passwordIcon = passwordToggle.querySelector('img');
-
-        passwordToggle.addEventListener('click', () => {
-            const isPasswordVisible = passwordInput.type === 'text';
-            passwordInput.type = isPasswordVisible ? 'password' : 'text';
-            passwordToggle.setAttribute('aria-label', isPasswordVisible ? 'Mostrar senha' : 'Ocultar senha');
-            passwordIcon.src = isPasswordVisible
-                ? '../assets/image/eye-visibility.svg'
-                : '../assets/image/eye-visibility-off.svg';
-        });
-    </script>
 </body>
 
 </html>
