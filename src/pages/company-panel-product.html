@@ -48,6 +48,161 @@
     </nav>
   </section>
 
+  <main class="page-wrapper">
+    <div class="container">
+      <header class="card page-header">
+        <div class="header-text">
+          <h1>Produtos e Cortes Nobres</h1>
+          <p>Gerenciamento de catálogo, pesagens padrão e inventário de carnes em tempo real integrado às câmaras de maturação.</p>
+        </div>
+        <div class="header-actions">
+          <button type="button" id="btnExportar" class="btn btn-secondary">
+            <i data-lucide="download"></i>
+            <span>Exportar Planilha</span>
+          </button>
+          <button type="button" id="btnNovoCorte" class="btn btn-primary">
+            <i data-lucide="plus"></i>
+            <span>Cadastrar Novo Corte</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="kpi-grid" aria-label="Indicadores de Estoque">
+        <article class="card kpi-card">
+          <span class="kpi-label">CORTES EM LINHA</span>
+          <div class="kpi-value-row">
+            <strong class="kpi-metric" id="kpiTotalCortes">148</strong>
+          </div>
+          <p class="kpi-subtext kpi-subtext--positive">
+            <i data-lucide="arrow-up"></i>
+            <span>12 cortes premium ativos</span>
+          </p>
+        </article>
+
+        <article class="card kpi-card">
+          <span class="kpi-label">EM MATURAÇÃO ATIVA</span>
+          <div class="kpi-value-row">
+            <strong class="kpi-metric">384</strong>
+            <span class="kpi-unit">kg</span>
+          </div>
+          <p class="kpi-subtext">Dry Aged 30–65 dias</p>
+        </article>
+
+        <article class="card kpi-card">
+          <span class="kpi-label">ALERTA DE REPOSIÇÃO</span>
+          <div class="kpi-value-row">
+            <strong class="kpi-metric" id="kpiAlerta">4</strong>
+          </div>
+          <p class="kpi-subtext">Cortes abaixo da cota mínima</p>
+        </article>
+
+        <article class="card kpi-card">
+          <span class="kpi-label">TICKET MÉDIO POR KG</span>
+          <div class="kpi-value-row">
+            <strong class="kpi-metric">R$ 184,50</strong>
+          </div>
+          <p class="kpi-subtext">Marmoreio BMS 8+ em alta</p>
+        </article>
+      </section>
+
+      <section class="card filter-section" aria-label="Filtros de Pesquisa">
+        <div class="filter-controls">
+          <div class="search-box">
+            <i data-lucide="search" class="search-icon"></i>
+            <input 
+              type="text" 
+              id="inputBusca" 
+              placeholder="Buscar por corte, código SKU ou lote..." 
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="select-wrapper">
+            <i data-lucide="sliders-horizontal" class="select-prefix-icon"></i>
+            <select id="filtroCategoria" aria-label="Filtrar por Categoria">
+              <option value="todas">Todas as Categorias</option>
+              <option value="Dry Aged Especial">Dry Aged Especial</option>
+              <option value="Bovinos Angus">Bovinos Angus</option>
+              <option value="Wagyu A5">Wagyu A5</option>
+              <option value="Suínos Selecionados">Suínos Selecionados</option>
+            </select>
+            <i data-lucide="chevron-down" class="select-chevron"></i>
+          </div>
+
+          <div class="select-wrapper">
+            <select id="filtroUnidade" aria-label="Filtrar por Unidade">
+              <option value="todas">Unidade: Todas</option>
+              <option value="QUILOGRAMA (KG)">Quilograma (KG)</option>
+              <option value="UNIDADE (~1.2KG)">Unidade (~1.2KG)</option>
+              <option value="PACOTE (600G)">Pacote (600G)</option>
+            </select>
+            <i data-lucide="chevron-down" class="select-chevron"></i>
+          </div>
+
+          <div class="select-wrapper">
+            <select id="filtroStatus" aria-label="Filtrar por Status">
+              <option value="todos">Status: Todos</option>
+              <option value="Ativo">Ativo</option>
+              <option value="Pausado">Pausado</option>
+            </select>
+            <i data-lucide="chevron-down" class="select-chevron"></i>
+          </div>
+
+          <button type="button" id="btnLimparFiltros" class="btn-icon-filter" title="Limpar filtros" aria-label="Limpar filtros">
+            <i data-lucide="list-filter"></i>
+          </button>
+        </div>
+
+        <div class="filter-chips">
+          <button type="button" class="chip active" data-quick-filter="todos">
+            Todos (<span id="chipTotalCount">148</span>)
+          </button>
+        </div>
+      </section>
+
+      <section class="table-container" aria-label="Catálogo de Cortes">
+        <div class="table-responsive">
+          <table class="cuts-table">
+            <thead>
+              <tr>
+                <th>CORTE</th>
+                <th>PRODUTO & SKU</th>
+                <th>CATEGORIA</th>
+                <th>PREÇO BASE</th>
+                <th>PROMOCIONAL</th>
+                <th>UNIDADE</th>
+                <th>ESTOQUE ATUAL</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaCortesBody">
+            </tbody>
+          </table>
+        </div>
+
+        <footer class="table-footer">
+          <p class="pagination-info" id="paginationInfo">
+            Mostrando <strong>1 – 6</strong> de <strong>148</strong> cortes nobres
+          </p>
+          <nav class="pagination-controls" aria-label="Paginação">
+            <button type="button" class="page-btn" id="prevPage" aria-label="Página anterior">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button type="button" class="page-btn active" data-page="1">1</button>
+            <button type="button" class="page-btn" data-page="2">2</button>
+            <button type="button" class="page-btn" data-page="3">3</button>
+            <span class="page-ellipsis">...</span>
+            <button type="button" class="page-btn" data-page="25">25</button>
+            <button type="button" class="page-btn" id="nextPage" aria-label="Próxima página">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </nav>
+        </footer>
+      </section>
+
+    </div>
+  </main>
+
   
 </body>
 </html>
