@@ -149,7 +149,7 @@
           </div>
 
           <button type="button" id="btnLimparFiltros" class="btn-icon-filter" title="Limpar filtros" aria-label="Limpar filtros">
-            <i data-lucide="list-filter"></i>
+            <img src="../assets/image/Icon-filter.svg" alt="Icone de filtrar" aria-describedby="Icone de filtrar" aria-label="Icone de filtrar">
           </button>
         </div>
 
@@ -199,9 +199,68 @@
           </nav>
         </footer>
       </section>
-
     </div>
   </main>
+
+  <section class="modal-backdrop" id="modalNovoCorte">
+    <article class="modal-card">
+      <header class="modal-header">
+        <h2>Cadastrar Novo Corte</h2>
+        <button type="button" class="btn-close-modal" id="btnFecharModal" aria-label="Fechar modal">
+          <i data-lucide="x"></i>
+        </button>
+      </header>
+
+      <form id="formNovoCorte" class="modal-form">
+        <section class="form-section" id="secIdentificacao">
+          <div class="form-group">
+            <label for="novoNome">Nome do Corte</label>
+            <input type="text" id="novoNome" required placeholder="Ex: Ribeye Wagyu A5" />
+          </div>
+        </section>
+
+        <section class="form-section" id="secClassificacao">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="novaCategoria">Categoria</label>
+              <select id="novaCategoria">
+                <option value="Dry Aged Especial">Dry Aged Especial</option>
+                <option value="Bovinos Angus">Bovinos Angus</option>
+                <option value="Wagyu A5">Wagyu A5</option>
+                <option value="Suínos Selecionados">Suínos Selecionados</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="novaUnidade">Unidade</label>
+              <select id="novaUnidade">
+                <option value="QUILOGRAMA (KG)">QUILOGRAMA (KG)</option>
+                <option value="UNIDADE (~1.2KG)">UNIDADE (~1.2KG)</option>
+                <option value="PACOTE (600G)">PACOTE (600G)</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" id="secValores">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="novoPreco">Preço Base (R$)</label>
+              <input type="number" id="novoPreco" step="0.01" required placeholder="249.00" />
+            </div>
+            <div class="form-group">
+              <label for="novoEstoque">Estoque Inicial</label>
+              <input type="number" id="novoEstoque" step="0.1" required placeholder="25.0" />
+            </div>
+          </div>
+        </section>
+
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="btnCancelarModal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar Corte</button>
+        </footer>
+      </form>
+    </article>
+  </section>
 
   
 </body>
