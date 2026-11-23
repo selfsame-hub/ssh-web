@@ -11,3 +11,12 @@ passwordToggle.addEventListener('click', () => {
         : '../assets/image/eye-visibility-off.svg';
 
 });
+
+loginForm.addEventListener('submit', (event) => {
+            const username = emailInput.value.trim();
+
+            if (username.toLowerCase().endsWith('@corp')) {
+                event.preventDefault();
+                window.location.href = `./first-access-collaborator.html?user=${encodeURIComponent(username)}`;
+            }
+});
