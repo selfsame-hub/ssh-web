@@ -1,5 +1,6 @@
 const registerPassword = document.querySelector('#register-password');
 const confirmPassword = document.querySelector('#confirm-password');
+const registerForm = document.querySelector('.register-form');
 
 const validatePasswords = () => {
     const passwordsMatch = registerPassword.value === confirmPassword.value;
@@ -18,6 +19,17 @@ const validatePasswords = () => {
 
 registerPassword.addEventListener('input', validatePasswords);
 confirmPassword.addEventListener('input', validatePasswords);
+
+registerForm.addEventListener('submit', (event) => {
+    validatePasswords();
+
+    if (!registerForm.checkValidity()) {
+        return;
+    }
+
+    event.preventDefault();
+    window.location.href = './login.html';
+});
 
 document.querySelectorAll('.password-toggle').forEach((toggle) => {
     const passwordInput = document.querySelector(`#${toggle.dataset.target}`);

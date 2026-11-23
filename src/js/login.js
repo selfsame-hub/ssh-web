@@ -1,3 +1,5 @@
+const loginForm = document.querySelector('.login-form');
+const emailInput = document.querySelector('#email');
 const passwordInput = document.querySelector('#password');
 const passwordToggle = document.querySelector('.password-toggle');
 const passwordIcon = passwordToggle.querySelector('img');
@@ -13,10 +15,12 @@ passwordToggle.addEventListener('click', () => {
 });
 
 loginForm.addEventListener('submit', (event) => {
-            const username = emailInput.value.trim();
+    event.preventDefault();
+    const username = emailInput.value.trim();
 
-            if (username.toLowerCase().endsWith('@corp')) {
-                event.preventDefault();
-                window.location.href = `./first-access-collaborator.html?user=${encodeURIComponent(username)}`;
-            }
+    if (username.toLowerCase().endsWith('@corp')) {
+        window.location.href = `./first-access-collaborator.html?user=${encodeURIComponent(username)}`;
+    } else {
+        window.location.href = '../../index.html';
+    }
 });
