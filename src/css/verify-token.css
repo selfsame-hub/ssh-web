@@ -1,0 +1,73 @@
+@import url('./global.css');
+@import url('./login.css');
+
+.token-card {
+    max-width: 560px;
+}
+
+.token-header {
+    margin-bottom: 30px;
+}
+
+.token-header h1 {
+    margin-bottom: 8px;
+}
+
+.token-header p {
+    max-width: 380px;
+    margin: 0 auto;
+    color: #77716e;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.token-input {
+    justify-content: center;
+}
+
+.token-input input {
+    flex: 0 1 220px;
+    padding: 0;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .3em;
+    text-align: center;
+}
+
+.token-input input::placeholder {
+    color: #aaa6a4;
+    letter-spacing: .3em;
+}
+
+.field-group > small {
+    display: block;
+    margin-top: 8px;
+    color: #8d8987;
+    font-size: 10px;
+}
+
+.resend-link {
+    display: block;
+    margin: 16px auto 0;
+    color: var(--color-primary-container);
+    background: transparent;
+    font: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.resend-link:hover {
+    color: var(--color-primary);
+}
+
+@media (max-width: 430px) {
+    .token-header p {
+        font-size: 12px;
+    }
+
+    .token-input input {
+        flex-basis: 180px;
+    }
+}

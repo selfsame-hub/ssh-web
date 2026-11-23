@@ -8,6 +8,7 @@
     <title>Login | Selfsame Hub</title>
     <link rel="icon" type="image/svg+xml" href="../assets/image/logo-ssh.svg" alt="Logo da empresa Selfsamehub">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
 </head>
 
 <body>
@@ -37,13 +38,13 @@
                     <div class="field-group">
                         <div class="field-label">
                             <label for="password">Senha</label>
-                            <a href="" class="forgot-password">Esqueceu?</a>
+                            <a href="./recover-password.html" class="forgot-password">Esqueceu?</a>
                         </div>
                         <div class="input-wrapper">
                             <input type="password" id="password" name="password" placeholder="••••••••••••"
                                 autocomplete="current-password" required>
                             <button type="button" class="password-toggle" aria-label="Mostrar senha">
-                                <img src="../assets/image/eye-visibility.svg" alt="">
+                                <img src="../assets/image/eye-visibility.svg" alt="Mostrar senha">
                             </button>
                         </div>
                     </div>
@@ -93,31 +94,7 @@
         </aside>
     </main>
 
-    <script>
-        const passwordInput = document.querySelector('#password');
-        const passwordToggle = document.querySelector('.password-toggle');
-        const passwordIcon = passwordToggle.querySelector('img');
-        const loginForm = document.querySelector('.login-form');
-        const emailInput = document.querySelector('#email');
-
-        passwordToggle.addEventListener('click', () => {
-            const isPasswordVisible = passwordInput.type === 'text';
-            passwordInput.type = isPasswordVisible ? 'password' : 'text';
-            passwordToggle.setAttribute('aria-label', isPasswordVisible ? 'Mostrar senha' : 'Ocultar senha');
-            passwordIcon.src = isPasswordVisible
-                ? '../assets/image/eye-visibility.svg'
-                : '../assets/image/eye-visibility-off.svg';
-        });
-
-        loginForm.addEventListener('submit', (event) => {
-            const username = emailInput.value.trim();
-
-            if (username.toLowerCase().endsWith('@corp')) {
-                event.preventDefault();
-                window.location.href = `./first-access-collaborator.html?user=${encodeURIComponent(username)}`;
-            }
-        });
-    </script>
+   
 </body>
 
 </html>
