@@ -8,7 +8,6 @@
     <title>Login | Selfsame Hub</title>
     <link rel="icon" type="image/svg+xml" href="../assets/image/logo-ssh.svg" alt="Logo da empresa Selfsamehub">
     <link rel="stylesheet" href="../css/login.css">
-    <script src="../js/login.js"></script>
 </head>
 
 <body>
@@ -25,13 +24,13 @@
                     <h1 id="login-title">Bem-vindo</h1>
                     <p>Identifique-se para acessar a <span>selfsame<span>hub</span></span></p>
                 </header>
-
-                <form class="login-form" action="" method="post">
+                
+                <form class="login-form" action="../../index.html" method="post">
                     <div class="field-group">
                         <label for="email">E-mail ou usuário</label>
                         <div class="input-wrapper">
                             <input type="text" id="email" name="email" placeholder="client@email.com.br"
-                                autocomplete="username" required>
+                            autocomplete="username" required>
                         </div>
                     </div>
 
@@ -42,18 +41,18 @@
                         </div>
                         <div class="input-wrapper">
                             <input type="password" id="password" name="password" placeholder="••••••••••••"
-                                autocomplete="current-password" required>
+                            autocomplete="current-password" required>
                             <button type="button" class="password-toggle" aria-label="Mostrar senha">
                                 <img src="../assets/image/eye-visibility.svg" alt="Mostrar senha">
                             </button>
                         </div>
                     </div>
-
+                    
                     <button class="submit-button" type="submit">
                         Entrar
                     </button>
                 </form>
-
+                
                 <footer class="login-footer">
                     <p>Não possui uma conta? <a href="./register.html">Cadastre-se</a></p>
                     <p class="legal-links">
@@ -64,7 +63,7 @@
                 </footer>
             </div>
         </section>
-
+        
         <aside class="brand-panel" aria-label="Sobre a Selfsame Hub">
             <div class="brand-content">
                 <div class="brand-logo">
@@ -72,7 +71,7 @@
                 </div>
                 <h2>selfsame<span>hub</span></h2>
                 <p class="brand-slogan">“Qualidade, tradição e cortes nobres.”</p>
-
+                
                 <div class="brand-features">
                     <div class="feature-card">
                         <strong>SIF 100%</strong>
@@ -87,14 +86,15 @@
                         <small>Balança Aferida</small>
                     </div>
                 </div>
-
+                
                 <p class="brand-description">Plataforma integrada conectando clientes exigentes ao controle de
                     desossa e estoque de alta precisão.</p>
-            </div>
-        </aside>
-    </main>
-
-   
-</body>
-
-</html>
+                </div>
+            </aside>
+        </main>
+        
+        <script src="../js/login.js"></script>
+        
+    </body>
+    
+    </html>
