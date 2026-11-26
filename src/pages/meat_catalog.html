@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de carnes nobres com fracionamento sob medida e rastreabilidade Selfsame Hub">
+    <title>Meat Catalog | Selfsame Hub</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/image/logo-ssh.svg">
+    <link rel="stylesheet" href="../css/meat_catalog.css">
+</head>
+
+<body>
+    <main class="catalog-page">
+        <div class="catalog-container">
+            <!-- Hero Banner -->
+            <section class="hero-section" aria-labelledby="hero-title">
+                <div class="hero-banner">
+                    <div class="hero-banner__glow" aria-hidden="true"></div>
+
+                    <div class="hero-banner__content">
+                        <p class="hero-banner__subtitle">
+                            Carnes nobres selecionadas, fracionamento sob medida e entrega rápida para sua casa
+                            ou churrasco. Rastreabilidade ponta a ponta do produtor à sua mesa.
+                        </p>
+
+                        <h1 id="hero-title" class="hero-banner__title">
+                            Encontre os melhores cortes para o seu pedido
+                        </h1>
+
+                        <form class="search-form" action="#" method="get" role="search">
+                            <span class="search-form__icon" aria-hidden="true">
+                                <img src="../assets/image/catalog/search-icon.svg" alt="">
+                            </span>
+                            <input
+                                type="search"
+                                id="catalog-search"
+                                class="search-form__input"
+                                name="query"
+                                placeholder="Buscar cortes, carnes nobres, linguiças artesanais..."
+                                aria-label="Search meat cuts and artisan sausages"
+                            >
+                            <button type="submit" class="search-form__button">
+                                <span>Buscar</span>
+                                <img src="../assets/image/catalog/arrow-right-icon.svg" alt="" aria-hidden="true">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category Filters -->
+            <section class="category-filters" aria-label="Product categories">
+                <div class="category-filters__list" role="tablist" aria-label="Meat category filters">
+                    <button type="button" class="category-chip category-chip--active" role="tab" aria-selected="true">
+                        <img src="../assets/image/catalog/category-all-cuts.svg" alt="" aria-hidden="true">
+                        <span>Todos os Cortes</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-beef.svg" alt="" aria-hidden="true">
+                        <span>Bovinos</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-prime-cuts.svg" alt="" aria-hidden="true">
+                        <span>Cortes Nobres</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-barbecue.svg" alt="" aria-hidden="true">
+                        <span>Churrasco</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-poultry.svg" alt="" aria-hidden="true">
+                        <span>Aves</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-pork.svg" alt="" aria-hidden="true">
+                        <span>Suínos</span>
+                    </button>
+
+                    <button type="button" class="category-chip category-chip--special" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-daily-specials.svg" alt="" aria-hidden="true">
+                        <span>Especiais do Dia</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
