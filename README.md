@@ -1,6 +1,6 @@
 <!-- MODELO PROJETO FINALIZADO -->
 <h1 align="center"> 
-	  🚀✅ selfsame-hub - Andamento ✅🚀
+	 selfsame-hub - Andamento 
 </h1>
 
 <!-- ---------------------------------------------------------------------- -->
@@ -19,7 +19,7 @@
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE DESCRIÇÃO -->
-## 📄 Descrição do entregável
+## Descrição do entregável
 
 <!-- EXEMPLO DE DESCRIÇÃO DE UM PROJETO: -->
 - src (estrutura geral do projeto: imagens, estilos, ect)
@@ -31,7 +31,7 @@
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DESCRIÇÃO SOBRE O PROJETO: -->
-## 💻 Sobre o projeto
+## Sobre o projeto
 
 <!-- EXPLICA O MOTIVO DO PROJETO -->
 A ssh-web é um projeto desenvolvido durante meus estudos em Front-end com o objetivo de praticar a criação de páginas web utilizando HTML, CSS e JavaScript. Durante o desenvolvimento, foram aplicados conceitos de semântica HTML, responsividade, organização de código e boas práticas de estruturação de interfaces, resultando em uma Multi pages moderna e bem estruturada.
@@ -40,7 +40,7 @@ A ssh-web é um projeto desenvolvido durante meus estudos em Front-end com o obj
 ---
 
 <!-- EXEMPLO DE LAYOUT: -->
-## 🎨 Layout
+## Layout
 -fazer-
 
 ---
@@ -48,7 +48,7 @@ A ssh-web é um projeto desenvolvido durante meus estudos em Front-end com o obj
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE COMO EXECUTAR O PROJETO -->
-## 🚀 Como executar o projeto
+## Como executar o projeto
 
 1 - Baixar o Projeto <br>
 2 - Executar o arquivo index.html
@@ -65,7 +65,7 @@ Um editor para trabalhar com o código como [VSCode](https://code.visualstudio.c
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE TECNOLOGIAS -->
-## 🛠 Tecnologias
+## Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -83,7 +83,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE COMO CONTRIBUIR PARA O PROJETO -->
-## 💪 Como contribuir para o projeto
+## Como contribuir para o projeto
 
 1. Faça um **fork** do projeto.
 2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
@@ -96,7 +96,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE AUTOR-->
-## 🦸 Autor
+## Autor
 
 <a href="">
 Selfsame-hub</a>
