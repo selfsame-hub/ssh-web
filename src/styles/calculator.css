@@ -802,19 +802,6 @@ body {
   color: var(--Marrom-escuro);
 }
 
-.footer-status {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: var(--font-microcopy-size);
-  line-height: var(--font-microcopy-lh);
-  font-weight: var(--font-microcopy-weight);
-  letter-spacing: 0.04em;
-  color: var(--Marrom-escuro);
-}
 
-.status-dot {
-  color: var(--color-surface-container-high);
-}
 
 
