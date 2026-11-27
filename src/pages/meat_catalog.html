@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de carnes nobres com fracionamento sob medida e rastreabilidade Selfsame Hub">
+    <title>Meat Catalog | Selfsame Hub</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/image/logo-ssh.svg">
+    <link rel="stylesheet" href="../css/meat_catalog.css">
+</head>
+
+<body>
+    <main class="catalog-page">
+        <div class="catalog-container">
+            <!-- Hero Banner -->
+            <section class="hero-section" aria-labelledby="hero-title">
+                <div class="hero-banner">
+                    <div class="hero-banner__glow" aria-hidden="true"></div>
+
+                    <div class="hero-banner__content">
+                        <p class="hero-banner__subtitle">
+                            Carnes nobres selecionadas, fracionamento sob medida e entrega rápida para sua casa
+                            ou churrasco. Rastreabilidade ponta a ponta do produtor à sua mesa.
+                        </p>
+
+                        <h1 id="hero-title" class="hero-banner__title">
+                            Encontre os melhores cortes para o seu pedido
+                        </h1>
+
+                        <form class="search-form" action="#" method="get" role="search">
+                            <span class="search-form__icon" aria-hidden="true">
+                                <img src="../assets/image/catalog/search-icon.svg" alt="">
+                            </span>
+                            <input
+                                type="search"
+                                id="catalog-search"
+                                class="search-form__input"
+                                name="query"
+                                placeholder="Buscar cortes, carnes nobres, linguiças artesanais..."
+                                aria-label="Search meat cuts and artisan sausages"
+                            >
+                            <button type="submit" class="search-form__button">
+                                <span>Buscar</span>
+                                <img src="../assets/image/catalog/arrow-right-icon.svg" alt="" aria-hidden="true">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category Filters -->
+            <section class="category-filters" aria-label="Product categories">
+                <div class="category-filters__list" role="tablist" aria-label="Meat category filters">
+                    <button type="button" class="category-chip category-chip--active" role="tab" aria-selected="true">
+                        <img src="../assets/image/catalog/category-all-cuts.svg" alt="" aria-hidden="true">
+                        <span>Todos os Cortes</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-beef.svg" alt="" aria-hidden="true">
+                        <span>Bovinos</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-prime-cuts.svg" alt="" aria-hidden="true">
+                        <span>Cortes Nobres</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-barbecue.svg" alt="" aria-hidden="true">
+                        <span>Churrasco</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-poultry.svg" alt="" aria-hidden="true">
+                        <span>Aves</span>
+                    </button>
+
+                    <button type="button" class="category-chip" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-pork.svg" alt="" aria-hidden="true">
+                        <span>Suínos</span>
+                    </button>
+
+                    <button type="button" class="category-chip category-chip--special" role="tab" aria-selected="false">
+                        <img src="../assets/image/catalog/category-daily-specials.svg" alt="" aria-hidden="true">
+                        <span>Especiais do Dia</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Meat Catalog Grid -->
+            <section class="catalog-section" aria-labelledby="catalog-title">
+                <header class="catalog-header">
+                    <div class="catalog-header__info">
+                        <div class="catalog-header__title-row">
+                            <h2 id="catalog-title" class="catalog-header__title">Cortes • Seleção de Qualidade</h2>
+                            <span class="catalog-header__count">6 itens ativos</span>
+                        </div>
+                        <p class="catalog-header__subtitle">
+                            Pesagem real garantida no ato do despacho com selo antifalsificação
+                        </p>
+                    </div>
+
+                    <div class="sort-control">
+                        <label for="catalog-sort" class="sort-control__label">Ordenar:</label>
+                        <select id="catalog-sort" class="sort-control__select" name="sort">
+                            <option value="popular" selected>Mais Populares</option>
+                            <option value="price-asc">Menor Preço</option>
+                            <option value="price-desc">Maior Preço</option>
+                            <option value="name-asc">Ordem Alfabética</option>
+                        </select>
+                    </div>
+                </header>
+
+                <div class="product-grid">
+                    <!-- Card 1: Picanha Nobre Bovina -->
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <span class="status-badge status-badge--available">
+                                <img src="../assets/image/catalog/badge-in-stock.svg" alt="" aria-hidden="true">
+                                <span>Disponível em estoque</span>
+                            </span>
+                            <img
+                                src="../assets/image/catalog/picanha-nobre-bovina.png"
+                                alt="Picanha Nobre Bovina cut on a wooden cutting board"
+                                class="product-card__image"
+                            >
+                            <div class="product-card__gradient" aria-hidden="true"></div>
+                            <span class="format-badge">Vendido por peso ou peça</span>
+                        </div>
+
+                        <div class="product-card__body">
+                            <div class="product-card__info">
+                                <div class="product-card__meta">
+                                    <span>BOVINO • RAÇA ANGUS</span>
+                                    <span>Porção Sugerida: 1.2kg</span>
+                                </div>
+                                <h3 class="product-card__title">Picanha Nobre Bovina</h3>
+                                <p class="product-card__description">
+                                    Capa de gordura uniforme, maciez extrema. Seleção manual rigorosa com maturação equilibrada para o…
+                                </p>
+                            </div>
+
+                            <div class="product-card__spec product-card__spec--customizer">
+                                <div class="spec-stack">
+                                    <span class="spec-stack__label">Espessura do Corte:</span>
+                                    <strong class="spec-stack__value">Bifes Altos (2 Dedos)</strong>
+                                </div>
+                                <span class="weight-pill">
+                                    <img src="../assets/image/catalog/spec-weight-icon.svg" alt="" aria-hidden="true">
+                                    <span>1.0 kg</span>
+                                </span>
+                            </div>
+
+                            <div class="product-card__footer">
+                                <div class="price-block">
+                                    <span class="price-block__label">VALOR UNITÁRIO</span>
+                                    <p class="price-block__value">
+                                        R$ 69,90<span class="price-block__unit">/kg</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="card-action-btn">
+                                    <img src="../assets/image/catalog/btn-choose-weight-icon.svg" alt="" aria-hidden="true">
+                                    <span>Escolher peso</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Costela Angus Ripa -->
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <span class="status-badge status-badge--available">
+                                <img src="../assets/image/catalog/badge-available.svg" alt="" aria-hidden="true">
+                                <span>Disponível</span>
+                            </span>
+                            <img
+                                src="../assets/image/catalog/costela-angus-ripa.png"
+                                alt="Costela Angus Ripa raw marbled beef ribs"
+                                class="product-card__image"
+                            >
+                            <div class="product-card__gradient" aria-hidden="true"></div>
+                            <span class="format-badge">Peça inteira ou fracionada</span>
+                        </div>
+
+                        <div class="product-card__body">
+                            <div class="product-card__info">
+                                <div class="product-card__meta">
+                                    <span>BOVINO • COSTELAR</span>
+                                    <span>Ideal para fogo de chão</span>
+                                </div>
+                                <h3 class="product-card__title">Costela Angus Ripa</h3>
+                                <p class="product-card__description">
+                                    Ideal para assados longos. Entrecortada com teor equilibrado de gordura entremeada que desmancha ao…
+                                </p>
+                            </div>
+
+                            <div class="product-card__spec">
+                                <span class="spec-item">
+                                    <img src="../assets/image/catalog/spec-prep-time.svg" alt="" aria-hidden="true">
+                                    <span>Preparo: 4 a 6 horas</span>
+                                </span>
+                                <span class="spec-tag">Corte em Ripa</span>
+                            </div>
+
+                            <div class="product-card__footer">
+                                <div class="price-block">
+                                    <span class="price-block__label">VALOR POR QUILO</span>
+                                    <p class="price-block__value">
+                                        R$ 48,50<span class="price-block__unit">/kg</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="card-action-btn">
+                                    <img src="../assets/image/catalog/btn-add-cart-icon.svg" alt="" aria-hidden="true">
+                                    <span>Adicionar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Ancho Prime Premium -->
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <span class="status-badge status-badge--available">
+                                <img src="../assets/image/catalog/badge-available.svg" alt="" aria-hidden="true">
+                                <span>Disponível</span>
+                            </span>
+                            <img
+                                src="../assets/image/catalog/ancho-prime-premium.png"
+                                alt="Ancho Prime Premium marbled ribeye steak"
+                                class="product-card__image"
+                            >
+                            <div class="product-card__gradient" aria-hidden="true"></div>
+                            <span class="format-badge">Bife de Lombo Selecionado</span>
+                        </div>
+
+                        <div class="product-card__body">
+                            <div class="product-card__info">
+                                <div class="product-card__meta">
+                                    <span>CORTES NOBRES • PRIME</span>
+                                    <span class="product-card__meta-accent">Marmoreio Nível 6+</span>
+                                </div>
+                                <h3 class="product-card__title">Ancho Prime Premium</h3>
+                                <p class="product-card__description">
+                                    Marmoreio nível 6+, corte alto. Textura amanteigada que derrete ao contato com a grelha em braseiro forte.
+                                </p>
+                            </div>
+
+                            <div class="product-card__spec">
+                                <span class="spec-item">
+                                    <img src="../assets/image/catalog/spec-thickness-icon.svg" alt="" aria-hidden="true">
+                                    <span>Espessura: 35mm</span>
+                                </span>
+                                <span class="spec-tag">± 400g / bife</span>
+                            </div>
+
+                            <div class="product-card__footer">
+                                <div class="price-block">
+                                    <span class="price-block__label">VALOR POR QUILO</span>
+                                    <p class="price-block__value">
+                                        R$ 89,90<span class="price-block__unit">/kg</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="card-action-btn">
+                                    <img src="../assets/image/catalog/btn-add-cart-icon.svg" alt="" aria-hidden="true">
+                                    <span>Adicionar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Linguiça Artesanal de Pernil -->
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <span class="status-badge status-badge--available">
+                                <img src="../assets/image/catalog/badge-available.svg" alt="" aria-hidden="true">
+                                <span>Disponível</span>
+                            </span>
+                            <img
+                                src="../assets/image/catalog/linguica-artesanal-pernil.png"
+                                alt="Linguiça Artesanal de Pernil coiled pork sausage"
+                                class="product-card__image"
+                            >
+                            <div class="product-card__gradient" aria-hidden="true"></div>
+                            <span class="format-badge">Receita Autoral</span>
+                        </div>
+
+                        <div class="product-card__body">
+                            <div class="product-card__info">
+                                <div class="product-card__meta">
+                                    <span>CHARCUTARIA • SUÍNO</span>
+                                    <span>100% Carne de Pernil</span>
+                                </div>
+                                <h3 class="product-card__title">Linguiça Artesanal de Pernil</h3>
+                                <p class="product-card__description">
+                                    Tempero suave com ervas finas. Produção diária sem conservantes químicos agressivos, preservando a umidade
+                                </p>
+                            </div>
+
+                            <div class="product-card__spec">
+                                <span class="spec-item">
+                                    <img src="../assets/image/catalog/spec-herbs-icon.svg" alt="" aria-hidden="true">
+                                    <span>Ervas Frescas Selecionadas</span>
+                                </span>
+                                <span class="spec-tag">Gomos de 12cm</span>
+                            </div>
+
+                            <div class="product-card__footer">
+                                <div class="price-block">
+                                    <span class="price-block__label">VALOR POR QUILO</span>
+                                    <p class="price-block__value">
+                                        R$ 34,90<span class="price-block__unit">/kg</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="card-action-btn">
+                                    <img src="../assets/image/catalog/btn-add-cart-icon.svg" alt="" aria-hidden="true">
+                                    <span>Adicionar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: Fraldinha Especial -->
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <span class="status-badge status-badge--available">
+                                <img src="../assets/image/catalog/badge-available.svg" alt="" aria-hidden="true">
+                                <span>Disponível</span>
+                            </span>
+                            <img
+                                src="../assets/image/catalog/fraldinha-especial.png"
+                                alt="Fraldinha Especial raw beef flank steak with rosemary"
+                                class="product-card__image"
+                            >
+                            <div class="product-card__gradient" aria-hidden="true"></div>
+                            <span class="format-badge">Corte Magro e Suculento</span>
+                        </div>
+
+                        <div class="product-card__body">
+                            <div class="product-card__info">
+                                <div class="product-card__meta">
+                                    <span>BOVINO • CHURRASCO</span>
+                                    <span>Rápido Ponto</span>
+                                </div>
+                                <h3 class="product-card__title">Fraldinha Especial</h3>
+                                <p class="product-card__description">
+                                    Fibras macias e sabor intenso. Extremamente versátil tanto para a grelha em alta temperatura quanto para o forno.
+                                </p>
+                            </div>
+
+                            <div class="product-card__spec">
+                                <span class="spec-item">
+                                    <img src="../assets/image/catalog/spec-juiciness-icon.svg" alt="" aria-hidden="true">
+                                    <span>Suculência Alta</span>
+                                </span>
+                                <span class="spec-tag">Peça de ±1.1kg</span>
+                            </div>
+
+                            <div class="product-card__footer">
+                                <div class="price-block">
+                                    <span class="price-block__label">VALOR POR QUILO</span>
+                                    <p class="price-block__value">
+                                        R$ 42,90<span class="price-block__unit">/kg</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="card-action-btn">
+                                    <img src="../assets/image/catalog/btn-add-cart-icon.svg" alt="" aria-hidden="true">
+                                    <span>Adicionar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6: T-Bone Dry Aged 30 Dias (Out of Stock) -->
+                    <article class="product-card product-card--out-of-stock">
+                        <div class="product-card__media">
+                            <span class="status-badge status-badge--out-of-stock">
+                                <img src="../assets/image/catalog/badge-out-of-stock.svg" alt="" aria-hidden="true">
+                                <span>Sem estoque</span>
+                            </span>
+                            <img
+                                src="../assets/image/catalog/t-bone-dry-aged.png"
+                                alt="T-Bone Dry Aged 30 Dias maturing inside a dry-aging cabinet"
+                                class="product-card__image"
+                            >
+                            <div class="product-card__gradient" aria-hidden="true"></div>
+                            <span class="format-badge">Próxima maturação em 4 dias</span>
+                        </div>
+
+                        <div class="product-card__body">
+                            <div class="product-card__info">
+                                <div class="product-card__meta">
+                                    <span>ESPECIAL • DRY AGED</span>
+                                    <span class="product-card__meta-muted">Maturado a Seco</span>
+                                </div>
+                                <h3 class="product-card__title">T-Bone Dry Aged 30 Dias</h3>
+                                <p class="product-card__description">
+                                    Lote especial maturado a seco com controle estrito de umidade e temperatura. Notas concentradas de avelã e…
+                                </p>
+                            </div>
+
+                            <div class="product-card__spec">
+                                <span class="spec-item">
+                                    <img src="../assets/image/catalog/spec-alert-bell.svg" alt="" aria-hidden="true">
+                                    <span>Avise-me quando pronto</span>
+                                </span>
+                                <button type="button" class="alert-trigger">Ativar Alerta</button>
+                            </div>
+
+                            <div class="product-card__footer">
+                                <div class="price-block">
+                                    <span class="price-block__label">VALOR POR QUILO</span>
+                                    <p class="price-block__value">
+                                        R$ 119,00<span class="price-block__unit">/kg</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="card-action-btn card-action-btn--disabled" disabled>
+                                    <img src="../assets/image/catalog/btn-unavailable-icon.svg" alt="" aria-hidden="true">
+                                    <span>Indisponível</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Butchery Quality Standards Banner -->
+            <section class="standards-section" aria-label="Butchery quality standards">
+                <div class="standards-banner">
+                    <div class="standard-item">
+                        <div class="standard-item__icon" aria-hidden="true">
+                            <img src="../assets/image/catalog/benefit-cold-chain.svg" alt="">
+                        </div>
+                        <div class="standard-item__content">
+                            <h3 class="standard-item__title">Cadeia de Frio 100% Controlada</h3>
+                            <p class="standard-item__description">
+                                Seu pedido é manipulado em ambiente climatizado a 10°C e transportado em caixas térmicas lacradas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="standard-item">
+                        <div class="standard-item__icon" aria-hidden="true">
+                            <img src="../assets/image/catalog/benefit-custom-cut.svg" alt="">
+                        </div>
+                        <div class="standard-item__content">
+                            <h3 class="standard-item__title">Corte Sob Demanda Especializado</h3>
+                            <p class="standard-item__description">
+                                Escolha a espessura em milímetros ou o padrão de fatiamento. A açougueira corta após a confirmação do pedido.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="standard-item">
+                        <div class="standard-item__icon" aria-hidden="true">
+                            <img src="../assets/image/catalog/benefit-qr-weighing.svg" alt="">
+                        </div>
+                        <div class="standard-item__content">
+                            <h3 class="standard-item__title">Pesagem Transparente com QR Code</h3>
+                            <p class="standard-item__description">
+                                A etiqueta da embalagem traz o peso exato com código rastreador da carcaça e data de abate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
