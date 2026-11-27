@@ -7,7 +7,7 @@
     <title>Selfsame-hub</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="logo-ssh" href="./src/assets/image/logo-ssh.svg">
-    <link rel="stylesheet" href="../css/calculator.css">
+    <link rel="stylesheet" href="../styles/calculator.css">
 </head>
 
 <body>
@@ -33,6 +33,418 @@
             </nav>
         </div>
     </header>
+
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge-primary">
+                    FERRAMENTA EXCLUSIVA DA CASA DE CARNES
+                </span>
+                <h1>CALCULADORA DE<br>CHURRASCO ARTESANAL</h1>
+                <p class="hero-description">
+                    Descubra a quantidade ideal de cortes nobres por pessoa, bebidas e carvão sem desperdício e com
+                    garantia de qualidade SIF auditada. Precisão frigorífica direto na sua brasa.
+                </p>
+                <div class="hero-actions">
+                    <a href="#calculadora" class="btn btn-primary">Calcular Churrasco Agora</a>
+                    <a href="#dicas" class="btn btn-outline">Ver Dicas do Churrasqueiro</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img src="../assets/image/banner-meat.svg" alt="Cortes nobres e linguiças artesanais na tábua"
+                    aria-describedby="Imagem de um açougue com variações de carnes"
+                    aria-label="magem de um açougue com variações de carnes">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="steps-section" id="calculadora">
+        <div class="container">
+            <div class="steps-bar">
+                <div class="step-item active">
+                    <span class="step-number">1</span>
+                    <div class="step-text">
+                        <strong>CONVIDADOS</strong>
+                        <span>Adultos, crianças e perfil</span>
+                    </div>
+                </div>
+                <div class="step-item active">
+                    <span class="step-number">2</span>
+                    <div class="step-text">
+                        <strong>DURAÇÃO</strong>
+                        <span>Tempo de fogo ativo</span>
+                    </div>
+                </div>
+                <div class="step-item active">
+                    <span class="step-number">3</span>
+                    <div class="step-text">
+                        <strong>PROTEÍNAS NOBRES</strong>
+                        <span>Seleção de linhas de corte</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator-section">
+        <div class="container calculator-grid">
+
+            <div class="calculator-controls">
+                <div class="calc-card">
+                    <div class="calc-card-header">
+                        <div>
+                            <h2>
+                                <span class="icon-red">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </span>
+                                QUEM VAI NO CHURRASCO?
+                            </h2>
+                            <p>Ajuste o número exato para equilibrar o consumo proteico.</p>
+                        </div>
+                        <span class="step-tag">PASSO 01</span>
+                    </div>
+
+                    <div class="guests-grid">
+                        <div class="guest-box">
+                            <div class="guest-label">
+                                <strong>HOMENS</strong>
+                                <span>~450g - 600g</span>
+                            </div>
+                            <div class="counter-control">
+                                <button type="button" aria-label="Diminuir homens">-</button>
+                                <span class="counter-value">8</span>
+                                <button type="button" aria-label="Aumentar homens">+</button>
+                            </div>
+                        </div>
+
+                        <div class="guest-box">
+                            <div class="guest-label">
+                                <strong>MULHERES</strong>
+                                <span>~300g - 400g</span>
+                            </div>
+                            <div class="counter-control">
+                                <button type="button" aria-label="Diminuir mulheres">-</button>
+                                <span class="counter-value">6</span>
+                                <button type="button" aria-label="Aumentar mulheres">+</button>
+                            </div>
+                        </div>
+
+                        <div class="guest-box">
+                            <div class="guest-label">
+                                <strong>CRIANÇAS</strong>
+                                <span>~150g - 200g</span>
+                            </div>
+                            <div class="counter-control">
+                                <button type="button" aria-label="Diminuir crianças">-</button>
+                                <span class="counter-value">3</span>
+                                <button type="button" aria-label="Aumentar crianças">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-card">
+                    <div class="calc-card-header">
+                        <div>
+                            <h2>
+                                <span class="icon-red">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                </span>
+                                DURAÇÃO DO CHURRASCO
+                            </h2>
+                            <p>Eventos longos demandam reposição contínua e mais guarnições.</p>
+                        </div>
+                        <span class="step-tag">PASSO 02</span>
+                    </div>
+
+                    <div class="duration-grid">
+                        <label class="duration-option">
+                            <input type="radio" name="duracao" value="2h">
+                            <div class="duration-box">
+                                <strong>Até 2h</strong>
+                                <span>Churrasco rápido / Almoço</span>
+                            </div>
+                        </label>
+
+                        <label class="duration-option">
+                            <input type="radio" name="duracao" value="4h" checked>
+                            <div class="duration-box">
+                                <strong>2h a 4h</strong>
+                                <span>Confraternização padrão</span>
+                            </div>
+                        </label>
+
+                        <label class="duration-option">
+                            <input type="radio" name="duracao" value="4h+">
+                            <div class="duration-box">
+                                <strong>Mais de 4h</strong>
+                                <span>Festa inteira / Long duration</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-card">
+                    <div class="calc-card-header">
+                        <div>
+                            <h2>
+                                <span class="icon-red">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+                                        <path d="M7 2v20" />
+                                        <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+                                    </svg>
+                                </span>
+                                PREFERÊNCIA DE CORTES NOBRES
+                            </h2>
+                            <p>Marque os grupos que deseja que façam parte do seu kit de carnes.</p>
+                        </div>
+                        <span class="step-tag">PASSO 03</span>
+                    </div>
+
+                    <div class="cuts-list">
+                        <label class="cut-item">
+                            <input type="checkbox" checked>
+                            <div class="cut-info">
+                                <div class="cut-title">
+                                    <strong>Cortes Bovinos Especiais</strong>
+                                    <span class="tag-highlight">CARRO-CHEFE</span>
+                                </div>
+                                <p>Picanha Premium Angus, Bife Ancho, Prime Rib & Fraldinha Red</p>
+                            </div>
+                            <span class="cut-badge">BMS 6+</span>
+                        </label>
+
+                        <label class="cut-item">
+                            <input type="checkbox" checked>
+                            <div class="cut-info">
+                                <div class="cut-title">
+                                    <strong>Suíno Nobre e Defumação</strong>
+                                </div>
+                                <p>Costelinha BBQ marinada, Panceta Artesanal e Prime Pork Steak</p>
+                            </div>
+                            <span class="cut-badge">DUROC BREED</span>
+                        </label>
+
+                        <label class="cut-item">
+                            <input type="checkbox" checked>
+                            <div class="cut-info">
+                                <div class="cut-title">
+                                    <strong>Linguiças Artesanais de Cura Fria</strong>
+                                </div>
+                                <p>Linguiça Campeira de Pernil Puro, Provolone Curado & Ervas Finas</p>
+                            </div>
+                            <span class="cut-badge">100% PURO PERNIL</span>
+                        </label>
+
+                        <label class="cut-item">
+                            <input type="checkbox">
+                            <div class="cut-info">
+                                <div class="cut-title">
+                                    <strong>Aves de Alta Gastronomia</strong>
+                                </div>
+                                <p>Galeto Marinado na Cerveja IPA, Tulipa de Asa & Coração Temperado</p>
+                            </div>
+                            <span class="cut-badge">SEM HORMÔNIOS</span>
+                        </label>
+
+                        <label class="cut-item">
+                            <input type="checkbox">
+                            <div class="cut-info">
+                                <div class="cut-title">
+                                    <strong>Cordeiro & Caça Especial</strong>
+                                </div>
+                                <p>Carré Francês (French Rack), Paleta Desossada com Chimichurri Fresco</p>
+                            </div>
+                            <span class="cut-badge">DORPER PREMIUM</span>
+                        </label>
+                    </div>
+
+                    <div class="calc-footer-actions">
+                        <button type="button" class="btn btn-outline">↺ Limpar Dados</button>
+                        <button type="button" class="btn btn-primary btn-full">↻ Atualizar Cálculo do Churrasco</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-header">
+                    <div>
+                        <span class="summary-subtitle">ALGORITMO FRIGORÍFICO SIF</span>
+                        <h2>RESUMO DO CHURRASCO</h2>
+                    </div>
+
+                </div>
+
+                <div class="summary-kpis">
+                    <div class="kpi-box">
+                        <span class="kpi-label">TOTAL DE CARNES</span>
+                        <strong class="kpi-value">7,0<small>kg</small></strong>
+                        <span class="kpi-note">Sem osso / rendimento útil</span>
+                    </div>
+                    <div class="kpi-box">
+                        <span class="kpi-label">MÉDIA POR ADULTO</span>
+                        <strong class="kpi-value">460<small>g</small></strong>
+                        <span class="kpi-note">Fator de permanência 1.0x</span>
+                    </div>
+                </div>
+
+                <div class="summary-list-header">
+                    <span>CORTES & INSUMOS SUGERIDOS</span>
+                    <span>EST. R$</span>
+                </div>
+
+                <ul class="summary-items">
+                    <li>
+                        <div>
+                            <strong>Picanha Premium Angus SIF</strong>
+                            <span>2.8 kg (embalagem a vácuo)</span>
+                        </div>
+                        <span class="item-price">R$ 329,00</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Linguiça Artesanal de Pernil Puro</strong>
+                            <span>1.7 kg (grelha rápida)</span>
+                        </div>
+                        <span class="item-price">R$ 73,00</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Costelinha Suína Especial Duroc</strong>
+                            <span>2.0 kg (corte central)</span>
+                        </div>
+                        <span class="item-price">R$ 98,00</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Guarnições da Boutique</strong>
+                            <span>Pão de alho mineiro + Queijo de coalho (1.1 kg)</span>
+                        </div>
+                        <span class="item-price">R$ 34,00</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Carvão de Eucalipto & Sal Parrilla</strong>
+                            <span>2 sacos de 4kg + 1kg flor de sal entrefino</span>
+                        </div>
+                        <span class="item-price">R$ 46,00</span>
+                    </li>
+                </ul>
+
+                <div class="summary-total">
+                    <div>
+                        <span class="total-label">SUBTOTAL COM DESCONTO DO LOTE</span>
+                        <span class="total-sub">Preço garantido para carnes frescas</span>
+                    </div>
+                    <div class="total-price-box">
+                        <strong>R$ 580,00</strong>
+                        <span>~R$ 34,12 / pessoa</span>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-cart">
+                    ADICIONAR TODOS OS CORTES AO CARRINHO
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="tips-section" id="dicas">
+        <div class="container">
+            <div class="tips-header">
+                <span class="section-eyebrow"> PROTOCOLO DE ESPECIALISTA</span>
+                <h2>DICAS DO MESTRE AÇOUGUEIRO SELFSAMEHUB</h2>
+                <p>Como tratar carnes de alto marmoreio na grelha e garantir rendimento sem ressecar as fibras
+                    musculares.</p>
+            </div>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>Temperatura de Descanso</h3>
+                    <p>Retire a carne da refrigeração 20 minutos antes de grelhar para que o centro térmico atinja 14°C.
+                        Após assar, aguarde 3 minutos antes de fatiar para redistribuir a mioglobina.</p>
+                    <span class="tip-footer-tag">RETENÇÃO DE SUCULÊNCIA +35%</span>
+                </div>
+
+                <div class="tip-card">
+                    <h3>Granulometria do Sal</h3>
+                    <p>Prefira o sal de parrilla entrefino à flor de sal ou pedras grossas tradicionais. O sal fino
+                        dissolve perfeitamente com a gordura derretida de bovinos Angus e Wagyu sem queimar.</p>
+                    <span class="tip-footer-tag">UNIFORMIDADE SABOROSA</span>
+                </div>
+
+                <div class="tip-card">
+                    <h3>Zona de Fogo em 2 Níveis</h3>
+                    <p>Mantenha 60% da churrasqueira com brasa viva (selagem rápida a 250°C) e 40% com calor indireto
+                        para finalização de cortes espessos de 4cm ou mais, como Tomahawk e T-Bone.</p>
+                    <span class="tip-footer-tag">PONTO PERFEITO ROSADO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../assets/image/logo-ssh.svg" alt="Selfsamehub Carnes Nobres">
+                    </div>
+                    <p class="footer-about">
+                        Casa de Carnes de cortes nobres e centro de corte frigorífico especializado em genética premium,
+                        dry-aging rigoroso e cortes sob demanda com certificação sanitária integral.
+                    </p>
+                </div>
+
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h4>NAVEGAÇÃO</h4>
+                        <ul>
+                            <li><a href="#">Catálogo de Carnes</a></li>
+                            <li><a href="#calculadora">Calculadora de Churrasco</a></li>
+                            <li><a href="#">Cortes & Pesagem Ativa</a></li>
+                            <li><a href="#">Lotes & Rastreamento</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>CONFORMIDADE & LEGAL</h4>
+                        <ul>
+                            <li><a href="#">Termos de Serviço</a></li>
+                            <li><a href="#">Privacidade & LGPD</a></li>
+                            <li><a href="#">Certificação Sanitária SIF</a></li>
+                            <li><a href="#">Cadeia Fria & Logística</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <p class="footer-copy">
+                    © 2024 Selfsamehub Carnes Nobres S/A. Todos os direitos reservados. CNPJ 00.000.000/0001-00
+                </p>
+
+            </div>
+    </footer>
+
+
 </body>
 
 </html>
